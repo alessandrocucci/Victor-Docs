@@ -18,16 +18,16 @@ Above all theese, there is a script which starts a Victor instance, simply calle
 ::
     python victor.py [COMMAND]
 
-There is another script (hey_vic.py), always running in background, constantly listen for commands imparted by an app
-running on my Android Wear Smartwatch. When a command is recognised, he simply call a Victor instance using the victor.py program.
+There is another script (hey_vic.py), always running in background, constantly listen from commands imparted by a
+microphone. When a command is recognised by the Speech-to-Text Engine,
+he simply call a Victor instance using the victor.py program.
 
-Victor speaks. Obviously. A personal assistant who do not speak a single word is useless. He can use a very light linux program,
-espeak, configured to produce a robotic voice, or (my favourite) Ivona TTS Speech Cloud, a web service providing developers with
-natural-sounding Text-to-Speech functionality.
+Victor speaks. Obviously. A personal assistant who do not speak a single word is useless. He used a linux very light
+program, espeak, configured to produce a robotic voice.
 
 Lets talk about the modules. Here is a list of what Victor can do:
     - Speak (I've already told that)
-    - Listen (Google Speech Recognition using Android Wear Smartwatches or Smartphones)
+    - Listen (online and offline Speech-to-Text engines, depending on the accuracy I need for that task)
     - Tell the time
     - Check the weather
     - Check for new emails
@@ -37,14 +37,13 @@ Lets talk about the modules. Here is a list of what Victor can do:
     - Google Search
     - Play songs from Spotify
     - Display my Twitter timeline
-    - Tweet stuffs
-    - Check if someone enter or exit the main house door.
-    - Connect to my Android phone to do stuff with it (start a call, send a message, run maps, etc.)
-
-Here my WIPs (Work in Progress):
-    - Admin Panel website for Remote Control using Flask and MongoDB
+    - Tweet on his own account
+    - Check if someone enter or exit the main house door, greeting me or my friends.
+    - Connect to my Android phone to do stuff with it
 
 In future, I'm planning to add:
     - Facial Recognition
     - Auto watering my plants
     - Set an alarm in my house
+    - maybe a robotic arm...
+    - maybe even walk... ... ...
